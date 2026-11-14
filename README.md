@@ -57,15 +57,30 @@ I’m preparing focused, public project write-ups that show design choices, API 
 - **Email:** [Add a professional contact email if you want it public]
 - **GitHub:** [github.com/joebin02](https://github.com/joebin02)
 
-## Website files
+## Website (React + Vite)
 
-This repository also includes a decorative, responsive portfolio website built with plain HTML and CSS:
+The portfolio site is built with React. The source lives in `app/`; Vite builds it into static files that GitHub Pages serves from the repository root.
 
-- [`index.html`](index.html) — page content and sections
-- [`styles.css`](styles.css) — colors, layout, illustrations, responsive styling, and CSS-only animations
+- `app/src/App.jsx` — React page components and portfolio content
+- `app/src/styles.css` — responsive styling and motion effects
+- `vite.config.js` — Vite configuration with the repository Pages path
 
-The page uses animated entrance and scroll reveals, gently moving decorative orbits, and hover feedback. Motion is disabled for visitors who prefer reduced motion. To preview it, open `index.html` in a browser. To publish with GitHub Pages, place these files at the repository root and enable Pages for the `main` branch and root folder in the repository settings. The page uses Google Fonts when online and has local font fallbacks.
+### Run locally
+
+```bash
+npm ci
+npm run dev
+```
+
+### Build for GitHub Pages
+
+```bash
+npm run build:pages
+```
+
+This command builds the React app and copies the generated `index.html` and `assets/` into the repository root. Push those generated files to `main`; the existing branch-based Pages configuration will publish them. The page honors reduced-motion preferences and loads Google Fonts when online, with local font fallbacks.
 
 ---
 
 *Portfolio content is based on my resume. Personal project showcases and optional public contact details will be added as they’re ready.*
+
