@@ -1,3 +1,5 @@
+import tcsLogo from './assets/tcs-logo.svg';
+
 const achievements = [
   { value: '60', suffix: '+', detail: <>REST APIs<br />built &amp; maintained</> },
   { value: '25', suffix: '+', detail: <>Angular modules<br />delivered</> },
@@ -138,13 +140,19 @@ function Experience() {
       />
       <article className="experience-card">
         <div className="experience-topline">
-          <div className="company-lockup"><span className="company-symbol">T</span><span>TATA CONSULTANCY SERVICES</span></div>
-          <span className="date-pill"><span className="status-dot" /> JUL 2024 — PRESENT</span>
+          <div className="company-lockup"><img className="company-logo" src={tcsLogo} alt="Tata Consultancy Services" /></div>
+          <div className="experience-tenure" aria-label="Current role, July 2024 to present">
+            <span className="experience-tenure-label">CURRENT ROLE</span>
+            <span className="experience-tenure-range">
+              <span>JUL 2024</span><span aria-hidden="true">—</span>
+              <span className="experience-tenure-present"><span className="status-dot" /> PRESENT</span>
+            </span>
+          </div>
         </div>
         <div className="experience-body">
           <div className="role-block">
             <h3>Systems Engineer</h3>
-            <p>Enterprise application development</p>
+            <p>Full Stack Developer</p>
           </div>
           <div className="experience-details">
             <p>
@@ -167,7 +175,6 @@ function Experience() {
           <span className="foot-team">15-person Agile team</span>
         </div>
       </article>
-      <p className="privacy-note"><span aria-hidden="true">✳</span> Client and project identifiers are intentionally left out. Add them only if you’re cleared to share.</p>
     </section>
   );
 }

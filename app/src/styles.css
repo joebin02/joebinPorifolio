@@ -89,10 +89,13 @@ h1, h2, h3, p { margin-top: 0; }
 .section-aside { max-width: 255px; color: #737d73; font-size: 12px; line-height: 1.7; margin: 0 0 5px; }
 .experience-card { background: #fbfbf7; border: 1px solid #d8ddd2; box-shadow: 0 13px 34px rgba(30,41,31,.06); }
 .experience-topline { display: flex; justify-content: space-between; align-items: center; padding: 19px 25px; border-bottom: 1px solid #e4e7df; }
-.company-lockup { display: flex; gap: 12px; align-items: center; color: #4b564c; font: 500 9px var(--mono); letter-spacing: .08em; }
-.company-symbol { display: grid; place-items: center; width: 27px; height: 27px; background: #1b271d; color: var(--lime); border-radius: 50%; font: 600 15px var(--display); }
-.date-pill { color: #727d72; border: 1px solid #dce2d8; padding: 8px 10px; font: 9px var(--mono); letter-spacing: .06em; }
-.date-pill .status-dot { width: 6px; height: 6px; }
+.company-lockup { display: flex; align-items: center; }
+.company-logo { display: block; width: 132px; height: auto; }
+.experience-tenure { display: grid; gap: 5px; min-width: 177px; padding: 9px 12px; border: 1px solid #d5dfc9; border-left: 3px solid #8eae56; background: #eef4e5; }
+.experience-tenure-label { color: #7a876d; font: 8px var(--mono); letter-spacing: .12em; }
+.experience-tenure-range { display: flex; align-items: center; gap: 7px; color: #394437; font: 600 10px var(--mono); letter-spacing: .01em; }
+.experience-tenure-present { display: inline-flex; align-items: center; gap: 6px; color: #4b6e2e; }
+.experience-tenure-present .status-dot { width: 6px; height: 6px; margin: 0; }
 .experience-body { display: grid; grid-template-columns: .75fr 1.55fr; gap: 40px; padding: 36px 35px 31px; }
 .role-block h3 { font: 600 24px var(--display); letter-spacing: -.04em; margin-bottom: 7px; }
 .role-block p { color: #788379; font-size: 11px; }
