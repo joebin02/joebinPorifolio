@@ -69,7 +69,6 @@ function HeroArtwork() {
       <div className="orbit-node node-ui"><span className="node-icon">◫</span><span>EXPERIENCE</span></div>
       <div className="art-label label-top">FROM REQUEST</div>
       <div className="art-label label-bottom">TO REAL-WORLD IMPACT <span>↗</span></div>
-      <div className="art-index">FIG. 01 / FULL STACK</div>
     </div>
   );
 }
